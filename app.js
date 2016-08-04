@@ -134,5 +134,4 @@ $(document).ready(function(){
 		$('#next').hide();
 		
 	}
-
 })

@@ -29,7 +29,9 @@ body {
 	font-weight:300;
 	transition: 1s;
 }
+
 #next {
+
 	font-size:25px;
 	font-weight:300;
 	background-color:#cc99cc;
@@ -100,4 +102,6 @@ li {
 		font-size: 35px;
 	}
 }
+
+
 
