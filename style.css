@@ -1,0 +1,76 @@
+body{
+	background: url('img/greenblue.png');
+	background-size:cover;
+	width:100%;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	color:#fff;
+	margin: 0 auto;
+
+}
+.play_again{
+	font-size:32px;
+	text-align: right;
+	padding:20px 40px;
+}
+.welcome, .get_started, #question1, #question2, #question3, #question4, #question5, #finalscreen{
+	font-weight:900;
+	font-size:56px;
+	margin: auto;
+	padding:50px;
+	padding-top:200px;
+	text-align: center;
+
+}
+#count{
+	font-weight:300;
+	font-size:40px;
+	text-align:left;
+	padding:20px;
+}
+.get_started{
+padding:0;
+padding-bottom:50px;
+}
+#next{
+	font-size:25px;
+	font-weight:300;
+	background-color:#cc99cc;
+	width:100px;
+	height:60px;
+	border-radius: 20px;
+	border:none;
+	color:white;
+	
+}
+.button{
+	width:400px;
+	height:50px;
+	border-radius:20px;
+	background-color:#cc99cc;
+	border:none;
+	color:white;
+	font-size:32px;
+	font-weight:300;
+}
+.q1true, .q1false, .q2true, .q2false, .q3true, .q3false, .q4true, .q4false, .q5true, .q5false {
+	font-size:26px;
+	font-weight: 300;
+	padding: 20px;
+}
+.finalscreen {
+background-color:#cc99cc;
+display:block;
+padding:30px; 
+margin:50px 100px;
+
+}
+.score, .playagain{
+	font-weight: 300;
+}
+.playagain {
+	font-size:32px;
+}
+#finalscreen, #question1, #question2, #question3, #question5, #question4 {
+	display: none;
+}
