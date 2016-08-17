@@ -1,4 +1,4 @@
-.final-area, #next {
+.final-area, #next, #count {
 	display: none;
 }
 body {
@@ -12,19 +12,22 @@ body {
 	background-repeat: no-repeat;
 	background-size:cover;
 	padding:150px;
+	height:1000px;
 }
-#question {
-	height: 400px;
+#question, #final-area {
+	height: 500px;
+	text-align: center;
 }
-.button{
+.button, .playagainbutton{
 	width:400px;
 	height:50px;
 	border-radius:20px;
-	background-color:#FF9A47;
+	background-color:#FFC280;
 	border:none;
 	color:white;
 	font-size:32px;
 	font-weight:300;
+	transition: 1s;
 }
 #next {
 	font-size:25px;
@@ -35,6 +38,7 @@ body {
 	border-radius: 20px;
 	border:none;
 	color:white;
+	transition: 1s;
 }
 .start-area, #final-area {
 	font-size: 45px;
@@ -44,6 +48,9 @@ body {
 	text-align: center;
 	width: 100%;
 
+}
+#final-area{
+	font-weight: 500;
 }
 #count{
 	font-weight:300;
@@ -63,7 +70,34 @@ li {
 	text-decoration: none;
 	font-size:40px;
 	list-style: none;
+	padding: 10px;
 }
 #feedback{
-	font-size: 40px;
+	font-size: 30px;
 }
+@media only screen and (max-width: 700px) {
+	body{
+		padding: 50px;
+	}
+	#count {
+		position: absolute;
+		margin: -40px;
+		font-size:1.25em;
+		
+
+	}
+	h1{
+		font-size:1.25em;
+	}
+	.button, .playagainbutton {
+		font-size: 0.5em;
+		width: 250px;
+	}
+	li{
+		font-size: 30px
+	}
+	h2{
+		font-size: 35px;
+	}
+}
+

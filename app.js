@@ -39,7 +39,28 @@ var questions = [{
 $(document).ready(function(){
 	$('#question').hide();
 	$('#final-area').hide();
-	
+
+	//button styling
+	$('#next').mouseenter(function(){
+		$(this).css("background-color", "#7D1ABC")
+	});
+	$('#next').mouseleave(function(){
+		$(this).css("background-color", "#cc99cc")	
+	});
+	$('#playagainbutton').mouseenter(function(){
+		$(this).css("background-color","#FF9A47")
+	});
+	$('#playagainbutton').mouseleave(function(){
+		$(this).css("background-color", "#FFC280")	
+	});
+	$('#get_started').mouseenter(function(){
+		$(this).css("background-color","#FF9A47")
+	});
+	$('#get_started').mouseleave(function(){
+		$(this).css("background-color", "#FFC280")	
+	});
+
+
 	//some to say 'hey we're at index 2' placeholder variable
 	var currentQuestionIndex = 0;
 	var currentQuestion = questions[currentQuestionIndex];
@@ -51,6 +72,7 @@ $(document).ready(function(){
 		$('.start-area').hide();
 		// hide next button
 		$('#next').hide();
+		$('#count').show();
 	});
 	// click event on the answer to give feedback
 	$('#answers').click(function(event){
@@ -78,6 +100,7 @@ $(document).ready(function(){
 		$('#next').click(function(){
 		if (currentQuestionIndex < questions.length){
 		  loadquestion(currentQuestion);	
+		  $('#question').fadeIn("slow");
 		} else { 
 		  $('#question').hide();
 		  $('#final-area').show();
@@ -90,8 +113,10 @@ $(document).ready(function(){
 		count = 0;
 		currentQuestionIndex =0; 
 	  	currentQuestion = questions[currentQuestionIndex];
+	  	$('.count').text(count);
 		$('#final-area').hide();
 		$('.start-area').show();
+		$('#count').hide();
 	})
 
   function loadquestion(question){
@@ -111,10 +136,3 @@ $(document).ready(function(){
 	}
 
 })
-
-
-// jQuery
-// Score
-// Reset button
-// Disabling function
-// Next function
