@@ -12,7 +12,7 @@ body {
 	background-repeat: no-repeat;
 	background-size:cover;
 	padding:150px;
-	height:1000px;
+	height:100vh;
 }
 #question, #final-area {
 	height: 500px;
