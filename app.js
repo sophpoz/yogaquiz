@@ -79,6 +79,9 @@ $(document).ready(function(){
 	  // console.log(event.target)
 	  // $(event.target)
 	  // check the answer
+	  if ( $('#feedback').text() !== '' ) {
+	  	return false;
+	  }
 	  if ( $(event.target).text() === currentQuestion.correctAnswer){
 	    // show feedback
 	    $('#feedback').text(currentQuestion.correctFeedback);
@@ -100,13 +103,13 @@ $(document).ready(function(){
 		$('#next').click(function(){
 		if (currentQuestionIndex < questions.length){
 		  loadquestion(currentQuestion);	
-		  $('#question').fadeIn("slow");
+		  // $('#question').fadeIn("slow");
 		} else { 
 		  $('#question').hide();
-		  $('#final-area').show();
-		  
+		  $('#final-area').show();  
 		}
 	});
+
 
 	//play again
 	$('.playagain').click(function(){

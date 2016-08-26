@@ -12,11 +12,13 @@ body {
 	background-repeat: no-repeat;
 	background-size:cover;
 	padding:150px;
-	height:1000px;
+	padding-bottom: 0;
+	min-height: 100vh;
 }
 #question, #final-area {
 	height: 500px;
 	text-align: center;
+	
 }
 .button, .playagainbutton{
 	width:400px;
@@ -83,8 +85,6 @@ li {
 		position: absolute;
 		margin: -40px;
 		font-size:1.25em;
-		
-
 	}
 	h1{
 		font-size:1.25em;
@@ -94,10 +94,10 @@ li {
 		width: 250px;
 	}
 	li{
-		font-size: 30px
+		font-size: 35px
 	}
 	h2{
-		font-size: 35px;
+		font-size: 40px;
 	}
 }
 
